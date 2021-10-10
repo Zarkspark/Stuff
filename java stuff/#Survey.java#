@@ -1,9 +1,0 @@
-import java.util.Scanner
-import java.lang.String
-
-class survey
-{
-	public static void main(String[]args)
-	{
-		Scanner in = new Scanner(System.in);
-		System.out.println("Please type in your 
