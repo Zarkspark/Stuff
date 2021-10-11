@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class ASCII
+class ASCII extends delete
 {
 	public static void main(String []args)
 	{
@@ -10,5 +10,6 @@ class ASCII
 		{
 			System.out.println("*");
 		}
+		delete();
 	}
 }

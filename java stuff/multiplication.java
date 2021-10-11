@@ -1,9 +1,11 @@
 import java.util.Scanner;
 import java.lang.String;
 
-public class multiplication {
+public class multiplication extends delete
+{
     public static void main(String[] args){
         multiply();
+        delete();
     }
 
     public static int multiply(){

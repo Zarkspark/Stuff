@@ -1,7 +1,8 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class hello{
+class hello extends delete
+{
     public static void main(String[] args){
         System.out.println("You will now be asked to enter 2 numbers.");
         System.out.println("Enter your first number ");
@@ -15,6 +16,7 @@ class hello{
         System.out.println("The answer is " + calc);
         
         System.out.println("Made by zarkspark.");
+        delete();
     }
 
 }

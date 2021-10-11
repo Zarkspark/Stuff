@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class nthTerm
+class nthTerm extends delete
 {
 	static int difference = 0;
 	static int beforeFirst = 0;
@@ -17,6 +17,7 @@ class nthTerm
 		nthTermRule(sequence);
 		isTermInSequence(userNumber);
 		findTermInSequence(5);
+		delete();
 		
 	}
 	

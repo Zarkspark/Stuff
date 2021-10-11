@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 import java.lang.String;
 
-class numberGame
+class numberGame extends delete
 {
 	public static void main(String []args)
 	{
@@ -83,5 +83,6 @@ class numberGame
 			// Print on the screen that the user has guessed the number, and print out the randomNumber Java generated
 			System.out.println("Well done, you have guessed the number which is " +randomNumber);
 		}
+		delete();
 	}
 }

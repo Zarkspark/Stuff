@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class PrimeNumbers
+class PrimeNumbers extends delete
 {
 	public static void main(String[] args)
 	{
@@ -25,5 +25,6 @@ class PrimeNumbers
 		{
 			System.out.println("This isn't a prime number.");
 		}
+		delete();
 	}
 }

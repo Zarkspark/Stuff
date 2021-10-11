@@ -1,7 +1,7 @@
 import java.lang.String;
 import java.util.Scanner;
 
-class angles
+class angles extends delete
 {
 	public static void main(String[] args)
 	{
@@ -42,6 +42,7 @@ class angles
 			// display to the user the exterior angle of the polygon
 			System.out.println(calculation);
 		}
+		delete();
 	}
 	
 	public static int menu()

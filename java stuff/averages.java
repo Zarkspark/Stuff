@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class averages
+class averages extends delete
 {
 	
 	public static void main(String []args)
@@ -43,6 +43,7 @@ class averages
 			double range = range(array);
 			System.out.println(range);
 		}
+		delete();
 	}
 	
 	public static int menu()

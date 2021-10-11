@@ -1,6 +1,6 @@
 import java.lang.String;
 
-public class os {
+public class os extends delete{
     public static void main(String[] args){
         String os = System.getProperty("os.name");
         if(os == "Linux"){
@@ -11,5 +11,6 @@ public class os {
         }
        
         System.out.println(os);
+        delete();
     }
 }

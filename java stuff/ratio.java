@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class ratio
+class ratio extends delete
 {
 	public static void main(String[] args)
 	{
@@ -25,6 +25,7 @@ class ratio
 		String ratio = in.nextLine();
 		int[] array = makeArray(ratio);
 		printArray(array);
+		delete();
 	}
 	
 	public static int[] makeArray(String numbers)

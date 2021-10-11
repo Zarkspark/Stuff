@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class NewTime {
+class NewTime extends delete{
     /*
     * The code first imports "Scanner" and "String"
     * It creates a new class "NewTime"
@@ -41,5 +41,6 @@ class NewTime {
 
     public static void main(String[] args) {
         getChoice1();
+        delete();
     }
 }

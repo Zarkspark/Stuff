@@ -1,7 +1,7 @@
 import java.util.scanner
 import java.lang.string
 
-class HelloWorld
+class HelloWorld extends delete
 {
 	public static void main(String[]args)
 	{
@@ -17,5 +17,6 @@ class HelloWorld
 		{
 			System.out.println("Hello" + name +);
 		}
+		delete();
 	}
 }

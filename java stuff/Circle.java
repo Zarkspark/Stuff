@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class Circle
+class Circle extends delete
 {
 public static void main(String []args) 
     {
@@ -18,7 +18,7 @@ public static void main(String []args)
             System.out.println(" ");
         }
         
-        
+        delete();
         
     }
 }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class BubbleSort
+class BubbleSort extends delete
 {
 	public static void main(String[] args)
 	{
@@ -23,6 +23,7 @@ class BubbleSort
 			bubbleSortedArray = bubbleSortDescending(array);
 		}
 		printArray(bubbleSortedArray);
+		delete();
 	}
 	
 	public static int[] bubbleSortAscending(int[] numberArray)

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class Percentage
+class Percentage extends delete
 {
 	public static void main(String[] args)
 	{
@@ -26,6 +26,7 @@ class Percentage
 		{
 			
 		}
+		delete();
 	}
 	
 	public static double percentIncrease(double amount, double percent)

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class SquareNumbers
+class SquareNumbers extends delete
 {
 	public static void main(String[] args)
 	{
@@ -15,6 +15,7 @@ class SquareNumbers
 			int number = 2;
 			int squareNumber = number * number;
 		}
+		delete();
 		
 	}
 	

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class login
+class login extends delete
 {
 	public static void main(String[] args)
 	{
@@ -19,5 +19,6 @@ class login
 		{
 			System.out.println("That's it!");
 		}
+		delete();
 	}
 }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class addTime
+class addTime extends delete
 {
 	public static void main(String []args)
 	{
@@ -13,6 +13,7 @@ class addTime
 		
 		String twentyFourHourTime = menu();
 		addTimeToTwentyFourHourTime(twentyFourHourTime, addHours, addMins);
+		delete();
 	}
 	
 	public static String menu()

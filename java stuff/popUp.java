@@ -2,7 +2,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-class popUp
+class popUp extends delete
 {
 	public class CreateDialogFromOptionPane 
 	{
@@ -26,6 +26,7 @@ class popUp
                         	"What is your name?", null);
             	}
             });
+			delete();
         }
     }
 }

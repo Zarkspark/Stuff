@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class Division
+class Division extends delete
 {
 	public static void main(String[]args)
 	{
@@ -13,6 +13,7 @@ class Division
 		int remainder = firstNumber%secondNumber;
 		int calculation = firstNumber / secondNumber;
 		System.out.println("The answer is " + calculation + " with remainder " + remainder);
+		delete();
 	}
 	
 }

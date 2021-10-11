@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class nToTriangle
+class nToTriangle extends delete
 {
 	public static void main(String []args)
 	{
@@ -13,6 +13,7 @@ class nToTriangle
 		int cValue = cValue(formula);
 		System.out.println(""+xValue+"n + "+cValue);
 		printAsterisk(xValue, cValue);
+		delete();
 	}
 	
 	public static int xValue(String nthterm){

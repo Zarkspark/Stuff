@@ -1,11 +1,12 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class time
+class time extends delete
 {
 	public static void main(String []args)
 	{
 		String time = menu();
+		delete();
 	}
 	
 	public static String menu()

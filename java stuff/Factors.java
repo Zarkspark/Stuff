@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Factors
+class Factors extends delete
 {
 	public static void main(String[] args)
 	{
@@ -16,5 +16,6 @@ class Factors
 				System.out.println( i +" is a factor of " + number);
 			}
 		}
+		delete();
 	}
 }

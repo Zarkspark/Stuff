@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class PrimeGenerator
+class PrimeGenerator extends delete
 {
 	public static void main(String[] args)
 	{
@@ -17,6 +17,7 @@ class PrimeGenerator
 				numberOfPrimesFound = numberOfPrimesFound + 1;	
 			}
 		}
+		delete();
 	}
 	
 	public static boolean isPrime(int number)

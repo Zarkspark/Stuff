@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.lang.String;
 
 
-class SimpleCalculator
+class SimpleCalculator extends delete
 {
 	public static void main(String[]args)
 	{
@@ -37,7 +37,8 @@ class SimpleCalculator
 		 	 calculation = firstNumber / secondNumber;
 		 	 remainder = firstNumber%secondNumber;
 		 	 }
-		System.out.println("The answer is " + calculation + " with remainder " +remainder);
+		System.out.println("The answer is " + calculation + " with remainder " + remainder);
+		delete();
 	}
 	
 }

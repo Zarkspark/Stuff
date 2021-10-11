@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class MathsCalculator
+class MathsCalculator extends delete
 {
 	public static void main(String[]args)
 	{
@@ -36,6 +36,7 @@ class MathsCalculator
 		 	 remainder = firstNumber % secondNumber;
 		 	 }
 		System.out.println("The answer is "+ calculation +" with remainder " + remainder);
+		delete();
 	}
 	
 } 

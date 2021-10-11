@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class fibonnaci
+class fibonnaci extends delete
 {
 	public static void main(String []args)
 	{
@@ -20,6 +20,7 @@ class fibonnaci
 			String sequence = in.nextLine();
 			String answer = generateFibonnaciSequence(sequence, size);
 		}
+		delete();
 	}
 	
 	public static int menu()

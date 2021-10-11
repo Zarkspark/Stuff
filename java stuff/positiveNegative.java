@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class positiveNegative
+class positiveNegative extends delete
 {
 	public static void main(String []args)
 	{
@@ -11,6 +11,7 @@ class positiveNegative
 		int number = in.nextInt();
 		String decision = menu(number);
 		System.out.println(decision);
+		delete();
 	}
 	
 	public static String menu(int number)

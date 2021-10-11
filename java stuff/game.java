@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 import java.lang.String;
 
-class game
+class game extends delete
 {
 	public static void main(String []args)
 	{
@@ -15,6 +15,7 @@ class game
 		{
 			menu();
 		}
+		delete();
 	}
 	
 	public static void menu(String []args);

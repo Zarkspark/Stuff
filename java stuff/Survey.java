@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class Survey
+class Survey extends delete
 {
 	public static void main(String[] args) 
 	{
@@ -30,5 +30,6 @@ class Survey
 		{
 			System.out.println("Wrong, the answer was 3");
 		}
+		delete();
 	}
 }

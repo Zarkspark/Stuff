@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-class compare
+class compare extends delete
 {
 	public static void main(String []args)
 	{
@@ -13,6 +13,7 @@ class compare
 		int secondNumber = in.nextInt();
 		
 		String statement = menu(firstNumber, secondNumber);
+		delete();
 	}
 	
 	public static String menu(int firstNumber, int secondNumber)
