@@ -6,7 +6,8 @@ class BubbleSort
 	public static void main(String[] args)
 	{
 		Scanner in = new Scanner(System.in);
-		System.out.println("Please enter in a 3 random numbers. This code will order it in ascending order or descending order depending on your choice.");
+		System.out.println("This code will sort 3 numbers into ascending/descending order.");
+		System.out.println("Now please enter in a 3 random numbers (Put commas in between the numbers please).");
 		String numbers = in.nextLine();
 		System.out.println("Now please enter option 1 for ascending order or option 2 for descending order.");
 		int option = in.nextInt();
