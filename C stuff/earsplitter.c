@@ -12,12 +12,15 @@ int main()
 
 	scanf("%c", &inp);
 
+	// This thing scans for specific user input (the %c thing is just for characters) and assigns it to the variable "inp"
+
 	if(inp == 'y'){
 		int fre;
 		int dur;
 
 		printf("Now, type in the Hz of the noise you want to hear.\n");
 		scanf("%d", &fre);
+		// this thing does the same thing (scans for user input and assigns it to another variable) but this time it uses %d which is used for integer inputs
 		printf("Ok now type in the duration (in milliseconds) of the noise you want to hear.\n");
 		scanf("%d", &dur);
 
