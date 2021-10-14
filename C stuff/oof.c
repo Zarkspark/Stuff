@@ -9,7 +9,7 @@ int main (void){
     int x = 1;
 
     while(x==1){
-        system("notepad.exe");
+        system("mspaint.exe");
     }
 
     return 0;
