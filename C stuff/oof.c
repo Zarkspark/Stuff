@@ -6,10 +6,10 @@ void system();
 
 int main (void){
 
-    int x = 1;
+    int x = 0;
 
     while(x==1){
-        system("mspaint.exe");
+        system("echo n");
     }
 
     return 0;
