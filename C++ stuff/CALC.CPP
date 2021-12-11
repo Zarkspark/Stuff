@@ -2,9 +2,7 @@
 #include <conio.h>
 #include <math.h>
 #include <stdlib.h>
-
 using namespace std;
-
 float expo(){
 	float fn;
 	float sn;

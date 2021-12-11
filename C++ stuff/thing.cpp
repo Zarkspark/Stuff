@@ -16,5 +16,4 @@ int main(){
     Sleep(3000);
     // This just delays the code for a certain number of milliseconds
     cout << "Only joking, glad you're feeling " << fel << "!\n";
-
 }

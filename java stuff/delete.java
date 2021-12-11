@@ -5,6 +5,7 @@ import java.io.*;
 public class delete{
     public static void main(String[] args){
         System.out.println("This java file is used to cleanup any kind of .class files left when compiling code.");
+        delete();
     }
 
     public static void delete(){

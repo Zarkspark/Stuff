@@ -16,7 +16,7 @@ int main(){
     cin >> g;
     for(auto c : array){
         if(c == g){
-            cout << g << " has been found.";
+            cout << g << " has been found in the index: " << c;
         }
         else{
         }
