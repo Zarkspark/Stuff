@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 int main(){
-    srand(time(NULL));
-    int num = rand();
-    printf("%d",num);
+    printf("Type in your username\n");
+    char username[10];
+    scanf("%s", username);
+    printf("Username = %s" , username);
     return 0;
 }
