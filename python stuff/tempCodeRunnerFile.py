@@ -1,2 +1,1 @@
-
-    intro = tk.Label(text="Please pick a difficulty: ")
+print("Type in y or n next time.")
