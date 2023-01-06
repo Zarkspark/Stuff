@@ -1,0 +1,1 @@
+# We could sort the table, write it to the leaderboard then when the next user comes along and finishes, then we can clear the leaderboard and sort it again and so on
