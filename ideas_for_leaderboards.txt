@@ -1,1 +1,4 @@
 # We could sort the table, write it to the leaderboard then when the next user comes along and finishes, then we can clear the leaderboard and sort it again and so on
+
+
+# Read the contents of the leaderboard, then append all of that to the scoretable, then after that clear the leaderboard and then sort the scoretable then write all of that to the leaderboard then clear the scoretable

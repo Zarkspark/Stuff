@@ -126,8 +126,8 @@ def easy(username):
     timetaken = endtime-starttime
     # We can calculate the time taken by finding the difference of the start time and end time
 
-    score = int(((correct**2)//4) * timetaken)
-    print("You got " + str(correct) + " questions correct. In " + str(timetaken))
+    score = int(((correct**2)//4) * 1/timetaken)
+    print("You got " + str(correct) + " questions correct. In " + str(timetaken) + " seconds")
     print("Your score is " + str(score))
     leaderboardwrite(username,score,timetaken)
     # Calls the leaderboardwrite() function and parses the username, score and the time taken into the function for the leaderboard to be updated
@@ -177,8 +177,8 @@ def standard(username):
     timetaken = endtime-starttime
     # We can calculate the time taken by finding the difference of the start time and end time
 
-    score = int(((correct**2)//4) * timetaken)
-    print("You got " + str(correct) + " questions correct. In " + str(timetaken))
+    score = int(((correct**3)//4) * 1/timetaken)
+    print("You got " + str(correct) + " questions correct. In " + str(timetaken) + " seconds")
     print("Your score is " + str(score))
     leaderboardwrite(username,score,timetaken)
     # Calls the leaderboardwrite() function and parses the username, score and the time taken into the function for the leaderboard to be updated
@@ -228,8 +228,8 @@ def hard(username):
     timetaken = endtime-starttime
     # We can calculate the time taken by finding the difference of the start time and end time
 
-    score = int(((correct**2)//4) * timetaken)
-    print("You got " + str(correct) + " questions correct. In " + str(timetaken))
+    score = int(((correct**4)//4) * 1/timetaken)
+    print("You got " + str(correct) + " questions correct. In " + str(timetaken) + " seconds")
     print("Your score is " + str(score))
     leaderboardwrite(username,score,timetaken)
     # Calls the leaderboardwrite() function and parses the username, score and the time taken into the function for the leaderboard to be updated
@@ -242,32 +242,42 @@ def leaderboardwrite(username,score,timetaken):
 # It takes in the values for the username, the score and the timetaken to do this
 
     leaderboard = open("Multiplicationleaderboard.txt","r")
-    # leaderboard = open("Multiplicationleaderboard.txt","w")
-    #! Error here was that the leaderboard would be cleared (because it was in write mode) after the user stopped the game, causing the scores of the players to be lost.
-    #? Hopefully a fix: Change the mode to read and read the lines of the leaderboard, then append everything to the scoretable so it can be sorted along with the other user's scores
-    # This clears the leaderboard so that we can write the sorted list to it later
+    # Sets the leaderboard into read mode so that we can read the leaderboard's lines
 
     for lines in leaderboard.readlines():
+        linesize = len(lines)
         print(lines)
-    
-    leaderboard = open("Multiplicationleaderboard.txt","a")
-    # This allows us to append things to the leaderboard.
+        # To see all of the old values in the scoretable
+        scoretable.append(lines)
+        #! FOR APPENDING THE PREVIOUS LINES IN THE LEADERBOARD TO THE SCORETABLE FOR SORTING BEFORE IT IS CLEARED
 
-    scoretable.append(str(score) + " - " + username + " in " + str(timetaken) + "seconds")
-    # Appends the score, the username and the time taken to the scoretable array
+    leaderboard = open("Multiplicationleaderboard.txt","w")
+    # Clears the leaderboard by putting it in write mode, this overwrites everything
 
     scoretable.sort(reverse=True)
-    # Sorting the array in reverse means sorting it from highest to lowest, making the scores go down from highest to lowest too
+    # Sorts the scoretable after appending the old scores from the leaderboard into the scoretable
     
-    print(scoretable)
+    leaderboard = open("Multiplicationleaderboard.txt","a")
+    # Sets the leaderboard into append mode in order to append things from the scoretable into the leaderboard.
+
+    scoretable.append(str(score) + " - " + username + " in " + str(timetaken) + " seconds\n")
+    # Appends the score, the username and the time of the new user taken to the scoretable array
+
+    scoretable.sort(reverse=True)
+    # Sorting the array in reverse means sorting it from highest to lowest, making the scores go down from highest to lowest too.
+    # This will also sort the new values along with the old values from the leaderboard
+
     size = len(scoretable)
     # Allocates the size value of the scoretable array into a variable for the for loop range
 
     for i in range(size):
     # Loops the instructions until the end of the array using the size of the array as the range
 
-        leaderboard.write(scoretable[i]+"\n")
+        leaderboard.write(scoretable[i])
         # Used to write all of the contents of the scoretable array onto the leaderboard.txt file
+    
+    scoretable.clear()
+    # Clears the scoretable so that the process can start once again
     
 def playagain():
 # This function is used to ask the user if they want to play the game again
