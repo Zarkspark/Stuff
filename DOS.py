@@ -52,7 +52,7 @@ def BiToDen():
     while(Repeat == True):# Main while loop:
         choiceloop = True
         denresult = 0
-        arraylength = len(binumber)
+        arraylength = len(binumber) #
         flag = 0
         for j in range(0,arraylength):
             if(binumber[j].isdigit() == False):
